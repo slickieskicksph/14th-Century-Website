@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
           method: 'eth_requestAccounts',
         })
         .then(function(accounts) {
-          onboardButton.innerText = `✔ ...${accounts[0].slice(-4)}`;
+          onboardButton.innerText = `Connected ...${accounts[0].slice(-7)}`;
           onboardButton.disabled = true;
           checkOwner(accounts[0]);
         });
